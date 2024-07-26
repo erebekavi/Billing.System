@@ -1,11 +1,12 @@
 import random
 import os
 import mysql.connector as my
-con=my.connect(host="localhost",user="root",passwd="kavi")
+con=my.connect(host="localhost",user="root",password="kavi")
 cur=con.cursor()
 cur.execute("show databases")
 a=cur.fetchall()
 c=[]
+
 
 for i in a:
     c.append(i[0])
